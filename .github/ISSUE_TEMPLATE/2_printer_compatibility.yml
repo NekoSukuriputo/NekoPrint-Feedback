@@ -1,0 +1,88 @@
+name: 🖨️ Printer compatibility / Kompatibilitas printer
+description: Tell us whether your printer works with NekoPrint. / Kabari apakah printer Anda bisa dipakai di NekoPrint.
+title: "[Printer] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports that a printer **works** are just as useful as reports that it does not!
+        Laporan bahwa printer **berhasil** sama bergunanya dengan laporan yang gagal!
+  - type: input
+    id: printer
+    attributes:
+      label: Printer brand and model / Merek dan model printer
+      placeholder: "Xprinter XP-365B / EPPOS EP5802AI / Zjiang ZJ-5805"
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result / Hasil
+      options:
+        - Works well / Berhasil dengan baik
+        - Works with issues / Berhasil tapi ada masalah
+        - Does not work / Tidak berhasil
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection / Koneksi
+      options:
+        - Bluetooth Classic
+        - Bluetooth Low Energy (BLE)
+        - USB (OTG)
+        - Wi-Fi / LAN (port 9100)
+        - Android system print / Cetak sistem Android
+    validations:
+      required: true
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: Protocol selected in NekoPrint / Protokol yang dipilih di NekoPrint
+      options:
+        - ESC/POS
+        - TSPL
+        - CPCL
+        - ZPL
+        - Not sure / Tidak tahu
+    validations:
+      required: true
+  - type: input
+    id: paper
+    attributes:
+      label: Paper or label size / Ukuran kertas atau label
+      placeholder: "58 mm, 80 mm, 50×30 mm label, 100×150 mm (A6)..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version / Versi aplikasi
+      placeholder: "1.0.0 (7)"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version / HP dan versi Android
+      placeholder: "Samsung Galaxy A15, Android 14"
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Details / Detail
+      description: |
+        What did you print, and what went wrong (blank paper, garbled text, cut off, misaligned labels, cannot connect)?
+        Apa yang dicetak, dan apa masalahnya (kertas kosong, karakter acak, terpotong, label bergeser, tidak bisa terhubung)?
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: Photo of the printout / Foto hasil cetak
+      description: Blur any personal data first. / Buramkan data pribadi dulu.
+    validations:
+      required: false

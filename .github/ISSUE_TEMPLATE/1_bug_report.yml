@@ -1,0 +1,81 @@
+name: 🐞 Bug report / Laporan bug
+description: Something does not work as expected. / Ada yang tidak berjalan semestinya.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing NekoPrint! This repository is **public**: blur names, addresses, phone and order numbers in screenshots.
+        Terima kasih sudah menguji NekoPrint! Repository ini **publik**: buramkan nama, alamat, nomor telepon, dan nomor pesanan di screenshot.
+  - type: input
+    id: version
+    attributes:
+      label: App version / Versi aplikasi
+      description: Settings › About / Pengaturan › Tentang
+      placeholder: "1.0.0 (7)"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version / HP dan versi Android
+      placeholder: "Xiaomi POCO F3, Android 13"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area / Bagian aplikasi
+      options:
+        - Print / Cetak (PDF, Word, image, marketplace label)
+        - Print preview / Pratinjau cetak
+        - Label Studio / Label (text, QR, barcode)
+        - History & reprint / Riwayat & cetak ulang
+        - Printers & connection / Printer & koneksi
+        - Ads / Iklan
+        - Purchase "Remove ads" / Pembelian "Hapus iklan"
+        - Settings / Pengaturan
+        - Other / Lainnya
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened? / Apa yang terjadi?
+      description: Include the exact error message if there is one. / Tulis pesan error persisnya kalau ada.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Langkah untuk mengulang
+      placeholder: |
+        1. Open ... / Buka ...
+        2. Tap ... / Ketuk ...
+        3. See ... / Terlihat ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect? / Apa yang seharusnya terjadi?
+    validations:
+      required: false
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostic codes (purchase problems) / Kode diagnostik (masalah pembelian)
+      description: |
+        Settings › About › tap the version line 7 times, then copy the lines or attach a screenshot. No personal data.
+        Pengaturan › Tentang › ketuk baris versi 7 kali, lalu salin barisnya atau lampirkan screenshot. Tanpa data pribadi.
+      placeholder: "PURCHASE_VERIFY/TAMPERED · 3"
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or screen recording / Screenshot atau rekaman layar
+      description: Drag and drop files here. / Tarik dan lepas file di sini.
+    validations:
+      required: false

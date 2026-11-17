@@ -1,0 +1,26 @@
+name: 💡 Feature request / Usulan fitur
+description: Suggest an idea or improvement. / Usulkan ide atau perbaikan.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do? / Apa yang ingin Anda lakukan?
+      description: Describe the task or problem, not only the solution. / Ceritakan kebutuhannya, bukan hanya solusinya.
+      placeholder: "I print 100 price labels a day and... / Saya mencetak 100 label harga per hari dan..."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / Ide Anda
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Other apps or examples / Aplikasi atau contoh lain
+      description: Optional. Screenshots or links are welcome. / Opsional. Screenshot atau link boleh.
+    validations:
+      required: false

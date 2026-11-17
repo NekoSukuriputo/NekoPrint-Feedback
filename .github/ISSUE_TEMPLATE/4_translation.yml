@@ -1,0 +1,53 @@
+name: 🌐 Translation / Terjemahan
+description: Wrong, unnatural or missing text in one of the 16 languages. / Teks salah, janggal, atau belum diterjemahkan.
+title: "[Translation] "
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language / Bahasa
+      options:
+        - English
+        - Bahasa Indonesia
+        - 日本語 (Japanese)
+        - 简体中文 (Chinese, Simplified)
+        - 繁體中文 (Chinese, Traditional)
+        - Español (Spanish)
+        - Português (Brasil)
+        - हिन्दी (Hindi)
+        - العربية (Arabic)
+        - Русский (Russian)
+        - 한국어 (Korean)
+        - Deutsch (German)
+        - Français (French)
+        - Türkçe (Turkish)
+        - Tiếng Việt (Vietnamese)
+        - ไทย (Thai)
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Screen / Layar
+      placeholder: "Settings › Theme / Pengaturan › Tema"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text / Teks sekarang
+    validations:
+      required: true
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Suggested text / Usulan teks
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot
+    validations:
+      required: false

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Join the closed test / Ikut jadi penguji
+    url: https://groups.google.com/g/nekoprint-testers
+    about: Join the tester group, then opt in on Google Play. / Gabung grup penguji, lalu daftar di Google Play.
+  - name: Private matters (purchases, refunds) / Hal pribadi (pembelian, refund)
+    url: https://nekosukuriputo.dev/NekoPrint
+    about: Email nekosukuriputo@gmail.com, do not post order IDs or personal data here. / Kirim email ke nekosukuriputo@gmail.com, jangan posting ID pesanan atau data pribadi di sini.
+  - name: Privacy policy / Kebijakan privasi
+    url: https://nekosukuriputo.dev/NekoPrint/privacy_policy.html
+    about: How NekoPrint handles your data. / Cara NekoPrint menangani data Anda.
